@@ -53,6 +53,7 @@ public class ControlPlayer : MonoBehaviour {
         if (coll.gameObject.tag == "Piso")
         {
             Saltando = false;
+            Debug.Log("Put el que lee");
         }
     }
 }
