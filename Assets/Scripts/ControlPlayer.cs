@@ -42,7 +42,7 @@ public class ControlPlayer : MonoBehaviour {
         if (Input.GetKey(KeyCode.W) && !Saltando)
         {
             Saltando = true;
-            rb.velocity = new Vector2(0, jumpSpeed);
+			rb.velocity = new Vector2(0, jumpSpeed);
            
         }
 
@@ -53,7 +53,7 @@ public class ControlPlayer : MonoBehaviour {
         if (coll.gameObject.tag == "Piso")
         {
             Saltando = false;
-            Debug.Log("Put el que lee");
+            Debug.Log("Puto el que lee");
         }
     }
 }
