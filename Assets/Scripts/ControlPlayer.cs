@@ -63,10 +63,8 @@ public class ControlPlayer : MonoBehaviour {
         if (coll.gameObject.tag == "Piso")
         {
             Saltando = false;
-<<<<<<< HEAD
-=======
             Aire = false;
->>>>>>> 74788ab6bdc8f8e9c07e18dbebda5a32a5f84de1
+
 
         }
     }

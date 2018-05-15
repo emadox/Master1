@@ -6,7 +6,6 @@ public class TiroForce : MonoBehaviour {
     public float tirostart;
     public float tresegundos = 3f;
     public float speed;
-<<<<<<< HEAD
     public Transform TiroSpawn;
 
 	// Use this for initialization
@@ -51,7 +50,7 @@ public class TiroForce : MonoBehaviour {
         //transform.position = Vector2.MoveTowards(transform.position, Mouse,speed*Time.deltaTime);
         //Mouse = new Vector2(Mouse.x , Mouse.y );
         //Debug.Log(Mouse);
->>>>>>> 74788ab6bdc8f8e9c07e18dbebda5a32a5f84de1
+
 	}
 
     void OnTriggerEnter2D(Collider2D otro)
