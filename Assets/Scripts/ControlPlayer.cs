@@ -53,7 +53,7 @@ public class ControlPlayer : MonoBehaviour {
         if (coll.gameObject.tag == "Piso")
         {
             Saltando = false;
-wwww
+
         }
     }
 }

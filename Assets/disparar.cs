@@ -8,9 +8,7 @@ public class disparar : MonoBehaviour {
     public Transform TiroSpawn;
     
 
-
-
-
+    
 	// Use this for initialization
 	void Start () {
 		
