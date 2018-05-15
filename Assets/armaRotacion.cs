@@ -6,8 +6,8 @@ public class armaRotacion : MonoBehaviour {
 
     public float speed = 5f;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	

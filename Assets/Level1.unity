@@ -124,7 +124,6 @@ GameObject:
   - component: {fileID: 67070379}
   - component: {fileID: 67070378}
   - component: {fileID: 67070381}
-  - component: {fileID: 67070382}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -189,6 +188,7 @@ Transform:
   m_Children:
   - {fileID: 1236344232}
   - {fileID: 379820171}
+  - {fileID: 2139323089}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -206,18 +206,8 @@ MonoBehaviour:
   moveSpeed: 300
   jumpSpeed: 10
   Saltando: 0
---- !u!114 &67070382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 67070377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb1344b6918b74149b9f0c9a42857d71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pelota: {fileID: 1516851115122922, guid: 09b1a2b5fa636a1409a8dcb32ee3419d, type: 2}
+  Aire: 0
+  pelota: {fileID: 1605686267013968, guid: 8a04ee6d07bb5b241b93386abea47493, type: 2}
   TiroSpawn: {fileID: 474341354}
 --- !u!1 &379820170
 GameObject:
@@ -316,7 +306,7 @@ GameObject:
   - component: {fileID: 474341354}
   m_Layer: 0
   m_Name: TiroSpawn
-  m_TagString: Untagged
+  m_TagString: Tiro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -346,7 +336,7 @@ GameObject:
   - component: {fileID: 687650171}
   m_Layer: 0
   m_Name: Floor_1 (3)
-  m_TagString: Piso
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1060,7 +1050,7 @@ GameObject:
   - component: {fileID: 1985706791}
   m_Layer: 0
   m_Name: Floor_1 (7)
-  m_TagString: Piso
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1157,7 +1147,7 @@ GameObject:
   - component: {fileID: 2104788472}
   m_Layer: 0
   m_Name: Floors
-  m_TagString: Untagged
+  m_TagString: Piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1234,7 +1224,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 11.980097
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1257,9 +1247,9 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139323085}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.33, y: 4.61, z: -19}
+  m_LocalPosition: {x: 0.33, y: -1.06, z: -19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 67070380}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

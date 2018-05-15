@@ -7,6 +7,9 @@ public class ControlPlayer : MonoBehaviour {
    public float moveSpeed;
    public float jumpSpeed = 100f;
    public bool Saltando;
+   public bool Aire;
+   public GameObject pelota;
+    public Transform TiroSpawn; 
    Rigidbody2D rb;
 
     void Start()
@@ -19,6 +22,11 @@ public class ControlPlayer : MonoBehaviour {
 
     void Update()
     {
+        if (Input.GetButton("Fire1"))
+        {
+            Disparo();
+        }
+
         if (Input.GetKey(KeyCode.A))
         {
             rb.velocity = new Vector2(-moveSpeed*Time.deltaTime, rb.velocity.y);
@@ -39,12 +47,14 @@ public class ControlPlayer : MonoBehaviour {
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
 
-        if (Input.GetKey(KeyCode.W) && !Saltando)
+        if (Input.GetKeyDown(KeyCode.W) && !Saltando && !Aire)
         {
-            Saltando = true;
+            Saltando = false;
 			rb.velocity = new Vector2(0, jumpSpeed);
            
         }
+        
+     
 
     }
 
@@ -53,8 +63,25 @@ public class ControlPlayer : MonoBehaviour {
         if (coll.gameObject.tag == "Piso")
         {
             Saltando = false;
+<<<<<<< HEAD
+=======
+            Aire = false;
+>>>>>>> 74788ab6bdc8f8e9c07e18dbebda5a32a5f84de1
 
         }
+    }
+
+    void OnCollisionExit2D(Collision2D collaire)
+    {
+        if (collaire.gameObject.tag == "Piso")
+        {
+            Aire = true;
+        }
+    }
+
+    void Disparo()
+    {
+        Instantiate(pelota, TiroSpawn.position, TiroSpawn.rotation);
     }
 }
 
