@@ -65,7 +65,6 @@ public class ControlPlayer : MonoBehaviour {
             Saltando = false;
             Aire = false;
 
-
         }
     }
 

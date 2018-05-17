@@ -6,18 +6,6 @@ public class TiroForce : MonoBehaviour {
     public float tirostart;
     public float tresegundos = 3f;
     public float speed;
-    public Transform TiroSpawn;
-
-	// Use this for initialization
-	void Start () {
-        speed = 120f;	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-        Vector2 TiroDireccion = new Vector2(TiroSpawn.position.x * speed * Time.deltaTime, TiroSpawn.position.y);
-=======
     public Transform TiroPos;
     private GameObject TiroSpawn;
     private Vector2 Mouse;
@@ -50,7 +38,6 @@ public class TiroForce : MonoBehaviour {
         //transform.position = Vector2.MoveTowards(transform.position, Mouse,speed*Time.deltaTime);
         //Mouse = new Vector2(Mouse.x , Mouse.y );
         //Debug.Log(Mouse);
-
 	}
 
     void OnTriggerEnter2D(Collider2D otro)
